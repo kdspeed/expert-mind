@@ -55,3 +55,32 @@ Phase 4 — Knowledge Twin (ongoing)
   reasoning patterns over time
   Junior staff query by engineer name
   "How would Dakshith solve this?"
+
+
+
+      or 
+
+
+
+
+      Phase 1 — Core backend (3-4 weeks)
+  FastAPI project setup
+  Ticket model — problem + reasoning + resolution
+  PostgreSQL + SQLAlchemy (you know this)
+  CRUD for tickets + engineers
+  Basic search across tickets
+  Docker + GitHub from day one
+
+Phase 2 — AI layer (4-6 weeks)
+  LLM API integration
+  Embeddings for every ticket
+  Semantic search (Project 12 skills)
+  RAG — "ask the expert" endpoint
+  Conversational query interface
+
+Phase 3 — Enterprise (4-6 weeks)
+  ServiceNow integration (free PDI)
+  Multi-user + authentication
+  Engineer knowledge profiles
+  Deploy to cloud
+  Demo video + clean GitHub README
