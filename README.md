@@ -58,8 +58,6 @@ Phase 4 — Knowledge Twin (ongoing)
 
 
 
-      or 
-
 
 
 
@@ -83,4 +81,37 @@ Phase 3 — Enterprise (4-6 weeks)
   Multi-user + authentication
   Engineer knowledge profiles
   Deploy to cloud
-  Demo video + clean GitHub README
+  Demo video + clean GitHub 
+
+
+
+                   USER
+                   │
+                   ▼
+       "How many containers
+        are in Warehouse A?"
+                   │
+                   ▼
+             EMBEDDING
+                   │
+                   ▼
+          [0.12, -0.44, ...]
+                   │
+                   ▼
+          SEARCH CACHE
+                   │
+          ┌────────┴────────┐
+          │                 │
+       SIMILAR           DIFFERENT
+          │                 │
+          ▼                 ▼
+    CACHE HIT           CACHE MISS
+          │                 │
+          ▼                 ▼
+    Return old          Ask LLM
+       answer               │
+                            ▼
+                       Save answer
+                            │
+                            ▼
+                       Return answer
