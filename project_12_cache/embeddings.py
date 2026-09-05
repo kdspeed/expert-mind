@@ -1,18 +1,18 @@
-from openai import OpenAI
+import google.generativeai as genai
 import numpy as np
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 def get_embedding(text: str) -> list:
-    response = client.embeddings.create(
-        model="text-embedding-3-small",
-        input=text
+    result = genai.embed_content(
+        model="models/text-embedding-004",
+        content=text
     )
-    return response.data[0].embedding
+    return result['embedding']
 
 def cosine_similarity(vec1: list, vec2: list) -> float:
     arr1, arr2 = np.array(vec1), np.array(vec2)
